@@ -1,0 +1,248 @@
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-n56hz[0m
+{"level":"warn","ts":1568739453.1793349,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568739453.1798658,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-62jrt[0m
+{"level":"warn","ts":1568739454.1025574,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568739454.1046095,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-cb-kubecd-bdd-spring-15687-g7ffz[0m
+{"level":"warn","ts":1568739460.179245,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568739461.3610537,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/cb-kubecd/bdd-spring-1568738889.git @ 1473f2a6c7f55b367bd6a564656be0f5d1960a6f in path /workspace/source"}
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:1473f2a6c7f55b367bd6a564656be0f5d1960a6f,1:11426130fba2c631271926e800a882dbeb2bbbb8
+DEBUG: ran git fetch --unshallow origin 11426130fba2c631271926e800a882dbeb2bbbb8: 1473f2a6c7f55b367bd6a564656be0f5d1960a6f: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 1473f2a6c7f55b367bd6a564656be0f5d1960a6f in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 11426130fba2c631271926e800a882dbeb2bbbb8 in 
+Merged SHA 11426130fba2c631271926e800a882dbeb2bbbb8 with commit message 'My first PR commit' into base branch master
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+DEBUG: ran git fetch origin 11426130fba2c631271926e800a882dbeb2bbbb8: 1473f2a6c7f55b367bd6a564656be0f5d1960a6f: in 
+DEBUG: Unshallowed git repo in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 1473f2a6c7f55b367bd6a564656be0f5d1960a6f in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 11426130fba2c631271926e800a882dbeb2bbbb8 in 
+Merged SHA 11426130fba2c631271926e800a882dbeb2bbbb8 with commit message 'My first PR commit' into base branch master
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Effective pipeline written to jenkins-x-serverless-jenkins-effective.yml
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+PipelineActivity for cb-kubecd-bdd-spring-1568738889-PR-1-1
+Applying changes 
+upserted PipelineResource cb-kubecd-bdd-spring-1568738889 for the git repository https://github.com/cb-kubecd/bdd-spring-1568738889.git
+upserted Task cb-kubecd-bdd-spring-1568738889-cb2qv-from-build-pack-1
+upserted Pipeline cb-kubecd-bdd-spring-1568738889-cb2qv-1
+created PipelineRun cb-kubecd-bdd-spring-1568738889-cb2qv-1
+created PipelineStructure cb-kubecd-bdd-spring-1568738889-cb2qv-1
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-422jg[0m
+{"level":"warn","ts":1568739473.6557217,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568739473.6563225,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-2cc6t[0m
+{"level":"warn","ts":1568739474.502176,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568739474.503666,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/preview\""}
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-cb-kubecd-bdd-spring-1568738889-w9th7[0m
+{"level":"warn","ts":1568739484.574201,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568739485.781856,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/cb-kubecd/bdd-spring-1568738889.git @ master in path /workspace/source"}
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:1473f2a6c7f55b367bd6a564656be0f5d1960a6f,1:11426130fba2c631271926e800a882dbeb2bbbb8
+DEBUG: ran git fetch --unshallow origin 11426130fba2c631271926e800a882dbeb2bbbb8: 1473f2a6c7f55b367bd6a564656be0f5d1960a6f: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 1473f2a6c7f55b367bd6a564656be0f5d1960a6f in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 11426130fba2c631271926e800a882dbeb2bbbb8 in 
+Merged SHA 11426130fba2c631271926e800a882dbeb2bbbb8 with commit message 'My first PR commit' into base branch master
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-set-version[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.example:bdd-spring-1568738889 >------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- versions-maven-plugin:2.7:set (default-cli) @ bdd-spring-1568738889 ---
+[INFO] Searching for local aggregator root...
+[INFO] Local aggregation root: /workspace/source
+[INFO] Processing change of com.example:bdd-spring-1568738889:0.0.1-SNAPSHOT -> 0.0.0-SNAPSHOT-PR-1-1
+[INFO] Processing com.example:bdd-spring-1568738889
+[INFO]     Updating project com.example:bdd-spring-1568738889
+[INFO]         from version 0.0.1-SNAPSHOT to 0.0.0-SNAPSHOT-PR-1-1
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.520 s
+[INFO] Finished at: 2019-09-17T16:58:24Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-install[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.example:bdd-spring-1568738889 >------------------
+[INFO] Building demo 0.0.0-SNAPSHOT-PR-1-1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ bdd-spring-1568738889 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ bdd-spring-1568738889 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/source/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ bdd-spring-1568738889 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/source/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ bdd-spring-1568738889 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/source/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ bdd-spring-1568738889 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.bddspring1568738889.DemoApplicationTests
+16:58:39.620 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.bddspring1568738889.DemoApplicationTests]
+16:58:39.633 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:58:39.661 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:58:39.706 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.bddspring1568738889.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:58:39.735 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.bddspring1568738889.DemoApplicationTests], using SpringBootContextLoader
+16:58:39.743 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.bddspring1568738889.DemoApplicationTests]: class path resource [com/example/bddspring1568738889/DemoApplicationTests-context.xml] does not exist
+16:58:39.744 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.bddspring1568738889.DemoApplicationTests]: class path resource [com/example/bddspring1568738889/DemoApplicationTestsContext.groovy] does not exist
+16:58:39.744 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.bddspring1568738889.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:58:39.746 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.bddspring1568738889.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:58:39.878 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.bddspring1568738889.DemoApplicationTests]
+16:58:40.064 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/com/example/bddspring1568738889/DemoApplication.class]
+16:58:40.075 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.bddspring1568738889.DemoApplication for test class com.example.bddspring1568738889.DemoApplicationTests
+16:58:40.439 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.bddspring1568738889.DemoApplicationTests]: using defaults.
+16:58:40.451 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:58:40.485 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+16:58:40.486 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+16:58:40.509 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1725dc0f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3911c2a7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4ac3c60d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4facf68f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@76508ed1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@41e36e46, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@15c43bd9, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3d74bf60, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4f209819, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@15eb5ee5]
+16:58:40.515 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.bddspring1568738889.DemoApplicationTests]
+16:58:40.516 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.bddspring1568738889.DemoApplicationTests]
+16:58:40.520 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.bddspring1568738889.DemoApplicationTests]
+16:58:40.520 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.bddspring1568738889.DemoApplicationTests]
+16:58:40.524 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.bddspring1568738889.DemoApplicationTests]
+16:58:40.524 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.bddspring1568738889.DemoApplicationTests]
+16:58:40.531 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1dde4cb2 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7714e963 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.bddspring1568738889.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@64729b1e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6895a785, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@76f2b07d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2f943d71], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+16:58:40.533 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.bddspring1568738889.DemoApplicationTests]
+16:58:40.533 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.bddspring1568738889.DemoApplicationTests]
+16:58:40.635 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-17 16:58:41.368  INFO 62 --- [           main] c.e.b.DemoApplicationTests               : Starting DemoApplicationTests on cb-kubecd-bdd-spring-1568738889-cb2qv-1-from-build-pack-8r6qc-p with PID 62 (started by root in /workspace/source)
+2019-09-17 16:58:41.376  INFO 62 --- [           main] c.e.b.DemoApplicationTests               : No active profile set, falling back to default profiles: default
+2019-09-17 16:58:46.727  INFO 62 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-17 16:58:48.396  INFO 62 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-17 16:58:48.532  INFO 62 --- [           main] c.e.b.DemoApplicationTests               : Started DemoApplicationTests in 7.873 seconds (JVM running for 9.641)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.675 s - in com.example.bddspring1568738889.DemoApplicationTests
+2019-09-17 16:58:49.102  INFO 62 --- [       Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ bdd-spring-1568738889 ---
+[INFO] Building jar: /workspace/source/target/bdd-spring-1568738889-0.0.0-SNAPSHOT-PR-1-1.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.8.RELEASE:repackage (repackage) @ bdd-spring-1568738889 ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ bdd-spring-1568738889 ---
+[INFO] Installing /workspace/source/target/bdd-spring-1568738889-0.0.0-SNAPSHOT-PR-1-1.jar to /root/.mvnrepository/com/example/bdd-spring-1568738889/0.0.0-SNAPSHOT-PR-1-1/bdd-spring-1568738889-0.0.0-SNAPSHOT-PR-1-1.jar
+[INFO] Installing /workspace/source/pom.xml to /root/.mvnrepository/com/example/bdd-spring-1568738889/0.0.0-SNAPSHOT-PR-1-1/bdd-spring-1568738889-0.0.0-SNAPSHOT-PR-1-1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  26.316 s
+[INFO] Finished at: 2019-09-17T16:58:53Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
+v0.37.0
+
+Showing logs for build [32mcb-kubecd-bdd-spring-1568738889-cb2qv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image openjdk:8-jdk-slim    
+ERROR: logging before flag.Parse: E0917 16:58:55.332862      10 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+ERROR: logging before flag.Parse: E0917 16:58:55.346591      10 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+2019/09/17 16:58:55 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0001] Error while retrieving image from cache: getting file info: stat /workspace/sha256:1856fc4560475f8bdc32f55d630a4c1beea5593c1d9cd494963db2cdf9d18a38: no such file or directory 
+[36mINFO[0m[0001] Downloading base image openjdk:8-jdk-slim    
+2019/09/17 16:58:56 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0002] cmd: EXPOSE                                  
+[36mINFO[0m[0002] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0002] Using files from context: [/workspace/source/pom.xml] 
+[36mINFO[0m[0002] Using files from context: [/workspace/source/target/bdd-spring-1568738889-0.0.0-SNAPSHOT-PR-1-1.jar] 
+[36mINFO[0m[0002] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0002] Taking snapshot of full filesystem...        
+[36mINFO[0m[0002] ENV PORT 8080                                
+[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0002] ENV CLASSPATH /opt/lib                       
+[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0002] EXPOSE 8080                                  
+[36mINFO[0m[0002] cmd: EXPOSE                                  
+[36mINFO[0m[0002] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0002] Using files from context: [/workspace/source/pom.xml] 
+[36mINFO[0m[0002] COPY pom.xml target/lib* /opt/lib/           
+[36mINFO[0m[0002] Taking snapshot of files...                  
+[36mINFO[0m[0002] Using files from context: [/workspace/source/target/bdd-spring-1568738889-0.0.0-SNAPSHOT-PR-1-1.jar] 
+[36mINFO[0m[0002] COPY target/*.jar /opt/app.jar               
+[36mINFO[0m[0002] Taking snapshot of files...                  
+[36mINFO[0m[0002] WORKDIR /opt                                 
+[36mINFO[0m[0002] cmd: workdir                                 
+[36mINFO[0m[0002] Changed working directory to /opt            
+[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0002] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
+[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
+2019/09/17 16:58:58 existing blob: sha256:14378903d43db9959a5a046c178ca638c7de1be299cab8830d50651eb785f2ec
+2019/09/17 16:58:58 existing blob: sha256:377e264464ddccb9550cff64ba470dfdb784acdb2ff265ae333b9215fc873b08
+2019/09/17 16:58:58 existing blob: sha256:b8f262c62ec67f02536f49654de586c022043652bbb6bbf76a8dab1542627a8d
+2019/09/17 16:58:58 existing blob: sha256:3198ebe941513b3be7ff20096fa6f22dc7a8d0f08b20993419825b25acbf050b
+2019/09/17 16:59:02 pushed blob: sha256:0185dbc310f7cd0bbd74306b05c82c3aa925ddd3026ba68a475881511b1bdd2a
+2019/09/17 16:59:03 pushed blob: sha256:95c55278f8cd62716a02f802762be6319493043ad7be03e73009b941e349abad
+error pushing image: failed to push to destination gcr.io/jenkins-x-bdd3/bdd-spring-1568738889:0.0.0-SNAPSHOT-PR-1-1: unsupported status code 502; body: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-container-build'. The execution of the pipeline has stopped.[0m
